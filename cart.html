@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <h1>Your Cart</h1>
+  <div id="cart-container"></div>
+  <p><strong>Total:</strong> $<span id="cart-total">0</span></p>
+  <button onclick="checkout()" class="btn">Proceed to Checkout</button>
+
+  <script>
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const cartContainer = document.getElementById("cart-container");
+    const cartTotal = document.getElementById("cart-total");
+
+    function updateCart() {
+      cartContainer.innerHTML = "";
+      let total = 0;
+      cart.forEach((item, index) => {
+        total += item.price;
+        cartContainer.innerHTML += `
+          <div>
+            <strong>${item.name}</strong> — $${item.price}
+            <button onclick="removeItem(${index})">Remove</button>
+          </div>
+        `;
+      });
+      cartTotal.textContent = total.toFixed(2);
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      updateCart();
+    }
+
+    function checkout() {
+      alert("This will be your payment step (PayPal or thank you page)");
+    }
+
+    updateCart();
+  </script>
+</body>
+</html>
