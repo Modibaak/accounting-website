@@ -112,12 +112,6 @@ footer {
 
   
 
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-}
-
 
 @media (max-width: 600px) {
   .hero-buttons {
