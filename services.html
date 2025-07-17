@@ -70,6 +70,17 @@
     <p>&copy; 2025 Accounting Firm. All rights reserved.</p>
   </footer>
 </body>
+
+  <script>
+  function addToCart(service, price) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push({ name: service, price: price });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(service + " added to cart!");
+  }
+</script>
+
+  
 </html>
 
 
