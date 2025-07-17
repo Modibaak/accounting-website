@@ -307,3 +307,24 @@ footer {
   height: 100px;
   resize: vertical;
 }
+
+
+.about-section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
