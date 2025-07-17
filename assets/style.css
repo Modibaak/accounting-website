@@ -219,3 +219,12 @@ footer {
   margin-top: 15px;
   color: #003366;
 }
+
+
+.service-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 10px auto;
+}
