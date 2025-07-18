@@ -361,3 +361,7 @@ footer {
 .back-btn:hover {
   background-color: #5a6268;
 }
+
+.hero h1 {
+  color: gold !important;
+}
