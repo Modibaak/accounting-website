@@ -342,6 +342,9 @@ footer {
 
 /* === Back Button Styling === */
 .back-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   display: inline-block;
   margin: 20px 0;
   background-color: #6c757d;
