@@ -8,7 +8,7 @@
 <body>
   <h1>Your Cart</h1>
   <div id="cart-container"></div>
-  <p><strong>Total:</strong> $<span id="cart-total">0</span></p>
+  <p><strong>Total:</strong> R<span id="cart-total">0</span></p>
   <button onclick="checkout()" class="btn">Proceed to Checkout</button>
 
   <script>
@@ -24,7 +24,7 @@
         total += item.price;
         cartContainer.innerHTML += `
           <div>
-            <strong>${item.name}</strong> — $${item.price}
+            <strong>R{item.name}</strong> — RR{item.price}
             <button onclick="removeItem(${index})">Remove</button>
           </div>
         `;
