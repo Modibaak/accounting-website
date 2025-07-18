@@ -1,196 +1,112 @@
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-
-/* Logo Section */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  justify-content: center;
-}
-
-.logo img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-}
-
-/* Header */
-header {
-  background-color: #003366;
-  color: white;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
   padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === Navigation === */
+nav {
+  background-color: #007bff;
+  padding: 15px;
   text-align: center;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Main Container === */
 main {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 20px;
-  max-width: 800px;
-  margin: auto;
-  background: white;
 }
 
-.hero-section {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-
+/* === Hero Section (Index Page) === */
 .hero {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background: url('../assets/images/hero.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
   color: white;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
   border-radius: 10px;
 }
 
-.hero-buttons {
-  margin-top: 20px;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
 .btn {
-  padding: 12px 25px;
-  border: none;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  margin: 0 10px;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.btn-primary {
-  background-color: #0056b3;
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: #003d80;
-}
-
-.btn-secondary {
+  padding: 10px 20px;
   background-color: #28a745;
   color: white;
-}
-
-.btn-secondary:hover {
-  background-color: #1c7a32;
-}
-
-
-
-footer {
-  background-color: #003366;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-
-@media (max-width: 600px) {
-  .logo {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  
-
-
-@media (max-width: 600px) {
-  .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .btn {
-    width: 80%;
-    text-align: center;
-  }
-}
-
-
-.contact-section {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-form button {
-  background-color: #0056b3;
-  color: white;
-  padding: 12px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
 }
 
-.contact-form button:hover {
-  background-color: #003d80;
+.btn:hover {
+  background-color: #218838;
 }
 
-
-.services-section {
+/* === About Page === */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
   text-align: center;
-  padding: 40px 20px;
 }
 
-.services-list {
+.about-image {
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+/* === Services / Store Page === */
+.services-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .service-card {
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 16px;
+  background-color: #fff;
+  padding: 15px;
   width: 260px;
-  margin: 16px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  background-color: #fff;
-}
-
-.service-card h2 {
-  font-size: 1.2rem;
-  margin: 10px 0;
 }
 
 .service-image {
@@ -206,81 +122,19 @@ footer {
   margin: 10px 0;
 }
 
-.btn {
-  background-color: #007bff;
-  color: white;
-  padding: 8px 14px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-
-
-
-/* Store Layout */
-.store-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 40px;
-  background: #f9f9f9;
-}
-
-.service-card {
-  background: white;
-  border: 1px solid #ccc;
-  width: 300px;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
-
-.service-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.service-card .price {
-  font-weight: bold;
-  color: green;
-  margin: 10px 0;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: navy;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-
+/* === Contact Page === */
 .contact-form {
   max-width: 500px;
-  margin: 30px auto;
+  margin: 0 auto;
+  background-color: white;
   padding: 20px;
-  background-color: #f4f4f4;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .contact-form label {
   display: block;
-  margin-bottom: 15px;
+  margin: 10px 0 5px;
   font-weight: bold;
 }
 
@@ -288,52 +142,88 @@ footer {
 .contact-form textarea {
   width: 100%;
   padding: 10px;
-  margin-top: 5px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box;
 }
 
-.contact-form textarea {
-  height: 100px;
-  resize: vertical;
-}
-
-
-.about-section {
-  max-width: 800px;
-  margin: 30px auto;
+/* === Cart Page === */
+.cart-container {
+  max-width: 700px;
+  margin: auto;
+  background-color: #fff;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cart-container h2 {
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.about-section p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-top: 20px;
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
 }
 
-.about-image {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-
-nav {
-  background-color: #0070ba;
-  padding: 10px;
-  text-align: center;
-}
-
-nav a {
+.cart-item button {
+  background-color: #dc3545;
   color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.cart-item button:hover {
+  background-color: #c82333;
 }
 
+/* === Footer (Optional) === */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* === Responsive Media Queries === */
+@media (max-width: 768px) {
+  .about-section,
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero {
+    padding: 60px 10px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
