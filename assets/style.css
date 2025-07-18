@@ -19,6 +19,23 @@ img {
   display: block;
 }
 
+/* === Logo === */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+
 /* === Navigation === */
 nav {
   background-color: #007bff;
