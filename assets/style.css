@@ -362,3 +362,6 @@ footer {
   background-color: #5a6268;
 }
 
+.logo h1 {
+  color: #DAA520 !important;  /* Goldenrod */
+}
