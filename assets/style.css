@@ -244,3 +244,32 @@ footer {
     font-size: 1rem;
   }
 }
+
+
+/* === Index Page Call to Action Section === */
+.call-to-action {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f1f1f1;
+  margin-top: 40px;
+}
+
+.call-to-action h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.call-to-action .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.call-to-action .btn:hover {
+  background-color: #0056b3;
+}
