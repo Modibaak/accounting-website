@@ -24,7 +24,7 @@
         total += item.price;
         cartContainer.innerHTML += `
           <div>
-            <strong>R{item.name}</strong> — RR{item.price}
+            <strong>${item.name}</strong> — $R{item.price}
             <button onclick="removeItem(${index})">Remove</button>
           </div>
         `;
