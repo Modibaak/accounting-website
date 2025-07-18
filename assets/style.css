@@ -340,3 +340,19 @@ footer {
   background-color: #0056b3;
 }
 
+/* === Back Button Styling === */
+.back-btn {
+  display: inline-block;
+  margin: 20px 0;
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #5a6268;
+}
