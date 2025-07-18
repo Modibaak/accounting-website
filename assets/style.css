@@ -70,15 +70,6 @@ main {
   border-radius: 10px;
 }
 
-
-.hero-content {
-  background-color: rgba(0, 0, 0, 0.6); /* translucent black */
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 600px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
-
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
